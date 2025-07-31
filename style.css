@@ -1,0 +1,101 @@
+:root {
+  --bg-light: #f0f0f0;
+  --text-light: #333;
+  --box-light: rgba(0, 0, 0, 0.05);
+
+  --bg-dark: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --text-dark: #f1f1f1;
+  --box-dark: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.3s ease;
+}
+
+.container {
+  background: var(--box-dark);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: #00adb5;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button:hover {
+  background: #008891;
+}
+
+.display {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.display p {
+  background: var(--box-dark);
+  padding: 1rem;
+  border-radius: 1rem;
+  word-wrap: break-word;
+  margin-bottom: 1rem;
+}
+
+/* Add to your CSS file */
+body.dark-theme {
+  background: #181818;
+  color: #f1f1f1;
+}
+
+body.dark-theme button {
+  background: #333;
+  color: #fff;
+}
+
+body.light .container {
+  background: var(--box-light);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+body.light .display p {
+  background: white;
+}
+
+@media (max-width: 480px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
