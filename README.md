@@ -7,7 +7,8 @@ VoltVoice is a real-time voice assistant web app built using Node.js and Cohere�
 ## 📽️ Demo Video
 
 🎬 Watch the assistant in action :  
-🔗 [VoltVoice Demo Video](https://drive.google.com/file/d/INSERT_YOUR_VIDEO_LINK_HERE/view)
+🔗 [VoltVoice Demo Video](https://drive.google.com/file/d/1f1p4mYbAhIFcH_US6PTaOrg9zEW70v5D/view?usp=drivesdk)
+
 
 ---
 
