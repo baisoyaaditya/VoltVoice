@@ -1,6 +1,6 @@
-# ⚡ VoltVoice – AI Voice Assistant Powered by Gemini
+# ⚡ VoltVoice – AI Voice Assistant Powered by Cohere
 
-VoltVoice is a real-time voice assistant web app built using Node.js, WebSockets, and Google’s Gemini AI streaming API. It allows users to have smooth, conversational voice interactions directly from the browser — now accessible from any device, anywhere.
+VoltVoice is a real-time voice assistant web app built using Node.js and Cohere’s language API. It allows users to have smooth, conversational voice interactions directly from the browser.
 
 ---
 
@@ -14,11 +14,11 @@ VoltVoice is a real-time voice assistant web app built using Node.js, WebSockets
 ## 💡 Features
 
 - 🎙️ Real-time voice interaction using the mic  
-- ⚡ Fast AI responses via Gemini Live API  
+- ⚡ Fast AI responses via Cohere API  
 - 🛑 Interrupt AI mid-response with your voice  
 - 🔘 Start / Stop Speaking controls  
 - 🌓 Dark/Light Theme toggle  
-- 💬 Open-topic conversations (not limited to Revolt Motors)  
+- 💬 Open-topic conversations  
 - 🌍 Works on any browser or device
 
 ---
@@ -29,10 +29,15 @@ VoltVoice is a real-time voice assistant web app built using Node.js, WebSockets
 |--------------|--------------------|
 | **Frontend** | HTML, CSS, JavaScript |
 | **Backend**  | Node.js, Express.js |
-| **Voice AI** | Google Gemini API (`gemini-2.5-flash-preview-native-audio-dialog`) |
+| **Voice AI** | Cohere Generate API |
 | **Streaming**| WebSocket (client ↔ server audio) |
 | **Speech**   | Web Speech API (text-to-speech) |
-| **Hosting**  | GitHub + Render (Free Tier) |
+
+---
+
+## ⚙️ Flexibility
+
+You can easily swap out the AI backend — VoltVoice supports integration with any web-compatible AI API, including Cohere, OpenAI, Gemini, or other RESTful services. Simply update the backend logic accordingly.
 
 ---
 
@@ -42,4 +47,4 @@ Create a `.env` file in the root of your project and add:
 
 ```env
 GEMINI_API_KEY=your_google_gemini_api_key_here
-MODEL=gemini-2.5-flash-preview-native-audio-dialog
+
